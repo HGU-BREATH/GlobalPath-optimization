@@ -56,6 +56,7 @@ $$
 \kappa = \frac{\left| x' y'' - y' x'' \right|}{\left( (x')^2 + (y')^2 \right)^{3/2}}
 $$
 <br>
+
 where $x'$ and $y'$ are the first derivatives with respect to $t$, and $x''$ and $y''$ are the second derivatives with respect to $t$.
 
 #### 2) What is meaningful inflection points?
