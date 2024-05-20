@@ -44,9 +44,7 @@ where \(y'\) is the first derivative of \(f(x)\), and \(y''\) is the second deri
 
 **However, Since a car track does not follow the general form \(y = f(x)\)** but rather \(x = x(t)\) and \(y = y(t)\), we need to use the following curvature calculation formula:
 
-\[
-\kappa = \frac{\left| x' y'' - y' x'' \right|}{\left( (x')^2 + (y')^2 \right)^{3/2}}
-\]
+https://latex.codecogs.com/svg.image?\[\kappa=\frac{\left|x'y''-y'x''\right|}{\left((x')^2&plus;(y')^2\right)^{3/2}}\]
 
 where \(x'\) and \(y'\) are the first derivatives with respect to \(t\), and \(x''\) and \(y''\) are the second derivatives with respect to \(t\).
 
