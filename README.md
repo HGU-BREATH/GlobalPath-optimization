@@ -33,20 +33,22 @@ We used **map_converter** in [Raceline-Optimization](https://github.com/CL2-UWat
 
 Based on the middle line, you can extract proper inflection points using curvature.
 
-The curvature \( \kappa \) of a general curve \(y = f(x)\) is defined as follows:
+The curvature $\kappa$ of a general curve $y = f(x)$ is defined as follows:
 
-\[
+$$
 \kappa = \frac{y''}{(1 + (y')^2)^{3/2}}
-\]
+$$
 
-where \(y'\) is the first derivative of \(f(x)\), and \(y''\) is the second derivative.
+where $y'$ is the first derivative of $f(x)$, and $y''$ is the second derivative.
 
 
-**However, Since a car track does not follow the general form \(y = f(x)\)** but rather \(x = x(t)\) and \(y = y(t)\), we need to use the following curvature calculation formula:
+**However, Since a car track does not follow the general form $y = f(x)$** but rather $x = x(t)$ and $y = y(t)$, we need to use the following curvature calculation formula:
 
-https://latex.codecogs.com/svg.image?\[\kappa=\frac{\left|x'y''-y'x''\right|}{\left((x')^2&plus;(y')^2\right)^{3/2}}\]
+$$
+\kappa = \frac{\left| x' y'' - y' x'' \right|}{\left( (x')^2 + (y')^2 \right)^{3/2}}
+$$
 
-where \(x'\) and \(y'\) are the first derivatives with respect to \(t\), and \(x''\) and \(y''\) are the second derivatives with respect to \(t\).
+where $x'$ and $y'$ are the first derivatives with respect to $t$, and $x''$ and $y''$ are the second derivatives with respect to $t$.
 
 ### 2) What is meaningful inflection points?
 
@@ -54,17 +56,17 @@ After getting curvatre corresponding to each point, we select points when the si
 
 ## 2. Separate a trajectory into intervals
 
-With inflection points, you can divide a trajectory into some intervals. If there are k points, there will be k intervels. Repeat this process for whole trajectoies.
+With inflection points, you can divide a trajectory into some intervals. If there are $k$ points, there will be $k$ intervels. Repeat this process for whole trajectoies.
 
-**After this process, there will be n * k intervals.** <br>
+**After this process, there will be $n * k$ intervals.** <br>
 
-\[
+$$
 \mathbf{Intervals} = \begin{pmatrix}
 interval[0][0] & \cdots & interval[0][k-1] \\
 \vdots & \ddots & \vdots \\
 interval[n-1][0] & \cdots & interval[n-1][k-1]
 \end{pmatrix}
-\]
+$$
 
 Also, each interval has its own period time, that is, how long does it take to pass the interval.
 
@@ -73,12 +75,8 @@ Also, each interval has its own period time, that is, how long does it take to p
 With interval time, you can select which interval is fastest.
 
 
-\[
+$$
 \mathbf{Intervals} = \begin{pmatrix}
 \text{interval}[m][0] & \text{interval}[m][1] & \cdots & \text{interval}[m][k-1]
 \end{pmatrix} \quad \text{when } 0 \leq m < n
-\]
-
-
-
-
+$$
