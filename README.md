@@ -1,8 +1,8 @@
 # GlobalPath-optimization
 Global Path Optimizer using minimal-lap time based merging.
 This optimizer is focused on [F1Tenth](https://f1tenth.org/).
-
 <br>
+
 # Optimization Flow
 
 ![Optimazation Flow](./ETC/flow.png)
@@ -13,8 +13,8 @@ This optimizer is focused on [F1Tenth](https://f1tenth.org/).
 
 It is important to divide a trajectory in order to meaningful merge. 
 We thought distinguising which is straight line or curve is the matter. <br>Therefore, you should find inflection points of the map.
-
 <br>
+
 ### 1. Get the Map
 
 You should have your own map to be used for getting middle line and way points.
@@ -23,14 +23,14 @@ We recommand to use [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox
 
 - You can refer how to generate the map with LiDAR from the [lecture of UPenn](https://docs.google.com/presentation/d/1HjCjyzHnR3T5yyXvdR83Kpb1lSvYX7gtirBwFY0Cpig/edit#slide=id.p).
 - Also you can learn about **SLAM** via this [material](https://docs.google.com/presentation/d/165G1zMMUtOqU7GOnKvmEjpn0K1Bqw0ZlDAA2VFHgLmo/edit#slide=id.g2bcbd44bc16_0_821).
-
 <br>
+
 ## 2. Get the Middline
 
 If you get your map, you can extract the middle line of the map. 
 <br>We used **map_converter** in [Raceline-Optimization](https://github.com/CL2-UWaterloo/Raceline-Optimization?tab=readme-ov-file).
-
 <br>
+
 ## 3. Find inflection points
 
 ### 1) Curvature
@@ -57,8 +57,8 @@ where $x'$ and $y'$ are the first derivatives with respect to $t$, and $x''$ and
 ### 2) What is meaningful inflection points?
 
 After getting curvatre corresponding to each point, we select points when the sign of curvature is changed. It can separate each interval (straight line, curve)
-
 <br>
+
 ## 2. Separate a trajectory into intervals
 
 With inflection points, you can divide a trajectory into some intervals. If there are $k$ points, there will be $k$ intervels. Repeat this process for whole trajectoies.
@@ -74,12 +74,11 @@ interval[n-1][0] & \cdots & interval[n-1][k-1]
 $$
 
 Also, each interval has its own period time, that is, how long does it take to pass the interval.
-
 <br>
+
 ## 3. Find the minimal-time interval 
 
-With interval time, you can select which interval is fastest.
-
+With interval time, you can select which interval is fastest.<br>
 
 $$
 \mathbf{Intervals} = \begin{pmatrix}
