@@ -15,7 +15,7 @@ This optimizer is focused on [F1Tenth](https://f1tenth.org/).
 ## I. Get the inflection points.
 
 It is important to divide a trajectory in order to meaningful merge. 
-<br>We thought distinguising which is straight line or curve is the matter. <br>Therefore, you should find inflection points of the map.
+<br><br>We thought distinguising which is straight line or curve is the matter. <br>Therefore, fiding inflection points of the map is matter.
 
 ### 1. Get the Map
 
@@ -95,4 +95,5 @@ $$
 \text{interval}[m][0] & \text{interval}[m][1] & \cdots & \text{interval}[m][k-1]
 \end{pmatrix} \quad \text{when } 0 \leq m < n
 $$
+
 <br>
