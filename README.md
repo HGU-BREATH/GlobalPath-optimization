@@ -79,6 +79,7 @@ interval[0][0] & \cdots & interval[0][k-1] \\
 interval[n-1][0] & \cdots & interval[n-1][k-1]
 \end{pmatrix}
 $$
+
 <br>
 Also, each interval has its own period time, that is, how long does it take to pass the interval.
 
