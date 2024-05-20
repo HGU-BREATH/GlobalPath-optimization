@@ -19,7 +19,7 @@ It is important to divide a trajectory in order to meaningful merge.
 
 ### 1. Get the Map
 
-You should have your own map to be used for getting middle line and way points.
+You should have your own map to be used for getting middle line and waypoints.
 
 We recommand to use [SLAM Toolbox](https://github.com/SteveMacenski/slam_toolbox) to generate the map.
 
@@ -39,15 +39,19 @@ Based on the middle line, you can extract proper inflection points using curvatu
 
 The curvature $\kappa$ of a general curve $y = f(x)$ is defined as follows:
 <br>
+
 $$
 \kappa = \frac{y''}{(1 + (y')^2)^{3/2}}
 $$
 <br>
+
 where $y'$ is the first derivative of $f(x)$, and $y''$ is the second derivative.
+
 <br>
 
 **However, Since a car track does not follow the general form $y = f(x)$** but rather $x = x(t)$ and $y = y(t)$, we need to use the following curvature calculation formula:
 <br>
+
 $$
 \kappa = \frac{\left| x' y'' - y' x'' \right|}{\left( (x')^2 + (y')^2 \right)^{3/2}}
 $$
