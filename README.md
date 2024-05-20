@@ -87,7 +87,9 @@ Also, each interval has its own period time, that is, how long does it take to p
 ## 3. Find the minimal-time interval 
 
 With interval time, you can select which interval is fastest.
+
 <br>
+
 $$
 \mathbf{Intervals} = \begin{pmatrix}
 \text{interval}[m][0] & \text{interval}[m][1] & \cdots & \text{interval}[m][k-1]
