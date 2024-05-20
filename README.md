@@ -15,7 +15,7 @@ This optimizer is focused on [F1Tenth](https://f1tenth.org/).
 ## I. Get the inflection points.
 
 It is important to divide a trajectory in order to meaningful merge. 
-<br><br>We thought distinguising which is straight line or curve is the matter. <br>Therefore, fiding inflection points of the map is matter.
+<br><br>We thought distinguising which is straight line or curve is the matter. <br>Therefore, finding inflection points of the map is matter.
 
 ### 1. Get the Map
 
