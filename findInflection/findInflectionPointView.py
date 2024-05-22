@@ -58,9 +58,3 @@ if __name__ == "__main__":
     
     main(args.input_file)
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description='Find and save inflection points from trajectory data.')
-    parser.add_argument('input_file', type=str, help='Path to the input CSV file containing middle line data.')
-    args = parser.parse_args()
-    
-    main(args.input_file)
